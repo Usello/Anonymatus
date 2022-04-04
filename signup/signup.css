@@ -1,0 +1,66 @@
+.container1 {
+  padding-left: 15%;
+  margin: 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container-signup {
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+}
+
+.container-signup span {
+  color: #1cda2b;
+  font-family: Righteous;
+}
+
+.user-input input {
+  width: 400px;
+  background: #ffffffc0;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container-signup #submit-btn {
+  display: flex;
+  border: 2px solid #1cda2b;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-family: Righteous;
+  color: #1cda2b;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.main {
+  font-family: Righteous;
+  font-size: 100px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px 2px #000;
+}
+.container a {
+  margin-left: 30%;
+  margin-right: 30%;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+.container button {
+  width: 100%;
+  background: #0c6813;
+  border: 1px solid #1cda2b;
+  border-radius: 10px;
+}
