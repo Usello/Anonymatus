@@ -9,7 +9,7 @@
     <link href="../styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="signup.css">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-    <title>Level 1</title>
+    <title>Cadastro</title>
 </head>
 
 <body class="bg">
@@ -18,6 +18,30 @@
         <div class="navbar-logo">
             Anonymatus
             <i class="fa-solid fa-user-secret"></i>
+        </div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../login/login.html">Login</a>
+                </li>
+                <li>
+                    <a href="#" class="locked">Cadastro</a>
+                </li>
+                <li>
+                    <a href="#">Leaderboard</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <div class="container">
@@ -31,11 +55,11 @@
                     <span class="signup-identifier">Nickname</span><br>
                     <input type="text" name="username" id="username"><br>
                     <span class="signup-identifier">E-mail</span><br>
-                    <input type="email" name="user-email" id="user-email"><br>
+                    <input type="email" name="user-email" id="userEmail"><br>
                     <span class="signup-identifier">Confirmar e-mail</span><br>
                     <input type="email" name="email-confirm" id="email-confirm"><br>
                     <span class="signup-identifier">Senha</span><br>
-                    <input type="password" name="password" id="password"><br>
+                    <input type="password" name="password" id="userPassword"><br>
                     <span class="signup-identifier">Confirmar senha</span><br>
                     <input type="password" name="confirm-password" id="confirm-password"><br>
                 </div>
@@ -43,8 +67,11 @@
             </form>
         </div>
     </div>
+    <script src="../firebase/auth.js"></script>
     <script src="../script.js"></script>
+    <script src="../firebase/firebase.js"></script>
     <script src="https://kit.fontawesome.com/ccdc00d7bd.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
 </body>
 
 </html>

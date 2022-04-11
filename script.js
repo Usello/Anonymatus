@@ -7,4 +7,8 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
+const contact = document.getElementById('#contato');
+contact.addEventListener('click', ()=>{
+    alert('deu certo');
+})
 // Animação TypeWritter para introdução do nível
