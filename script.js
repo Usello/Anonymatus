@@ -9,6 +9,8 @@ toggleButton.addEventListener('click', () => {
 
 const contact = document.getElementById('#contato');
 contact.addEventListener('click', ()=>{
-    alert('deu certo');
+    if(document.getElementById('#contact_card').style.cssText= {display: none}){
+        document.getElementsByClassName('contact_card').display=flex;
+    }
 })
 // Animação TypeWritter para introdução do nível
