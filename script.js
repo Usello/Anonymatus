@@ -5,12 +5,28 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
-})
+});
 
-const contact = document.getElementById('#contato');
-contact.addEventListener('click', ()=>{
-    if(document.getElementById('#contact_card').style.cssText= {display: none}){
-        document.getElementsByClassName('contact_card').display=flex;
-    }
-})
-// Animação TypeWritter para introdução do nível
+//Toggle do formulário de contato
+const contactCloser = document.querySelector('.close-btn');
+const contactOpener = document.querySelector('.contact-toggler');
+const contactForm = document.querySelector('.card_box');
+const titleContainer = document.querySelector('.container');
+
+//Botão de abrir
+contactOpener.addEventListener('click', () => {
+    contactForm.classList.add('visible');
+    titleContainer.classList.add('invisible')
+});
+
+//Botão de fechar
+contactCloser.addEventListener('click', () => {
+    contactForm.classList.remove('visible');
+    titleContainer.classList.remove('invisible');
+});
+
+//Fechar ao enviar formulário
+function contact_Closer() {
+    contactForm.classList.remove('visible');
+    titleContainer.classList.remove('invisible');
+}
